@@ -32,6 +32,8 @@ public class FlightSearchTest {
 		}
 		HomePage home1= new HomePage();
 		ErrorCollector.verifyEquals(home1.countOfTabs(), 5);
+		ErrorCollector.verifyEquals(home1.countOfTabs(), 5);
+
 		home1.goToStays();
 		//home1.goToFlights().Book2WayTicket("Pune (PNQ - Lohegaon)", "Mumbai (BOM - Chhatrapati Shivaji Intl.)", "departureDt", "returnDt");;
 		home1.goToFlights().Book2WayTicket(data.get("from"),data.get("to"),data.get("departureDt"),data.get("returnDt"));
